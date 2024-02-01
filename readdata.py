@@ -9,8 +9,8 @@ with open("data.log", "r") as f:
         if len(data) >= 2:
             x.append(float(data[0]))
             z.append(float(data[1]))
-plt.plot(x)
-plt.plot(z)
+plt.plot(x[:600])
+plt.plot(z[:600])
 plt.xlabel('timesteps (500hz)')
 plt.ylabel('meters')
 plt.legend(["x", "z"])
